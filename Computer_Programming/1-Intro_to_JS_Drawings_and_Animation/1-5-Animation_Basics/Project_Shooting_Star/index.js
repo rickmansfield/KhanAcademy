@@ -4,7 +4,7 @@ var xPos2 = 250;
 var yPos2 = 100;
 var moonSize = 30; 
 
-const draw = function() {
+function draw() {
     background(29, 40, 115);
     fill(108, 125, 133);
     
@@ -33,7 +33,6 @@ const draw = function() {
     
     xPos ++;
     yPos -= 0.5;
-
 };
 
 
