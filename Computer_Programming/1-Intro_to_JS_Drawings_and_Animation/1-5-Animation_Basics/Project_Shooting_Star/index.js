@@ -33,7 +33,7 @@ function draw() {
     
     xPos ++;
     yPos -= 0.5;
-};
+}
 
 
 

@@ -13,5 +13,5 @@ rect(176, 103, 12, 32);
 draw = function() {
 // take a bite out of the tomato!
 fill(255, 255, 255);
-ellipse(79, 203, 60, 62);
+ellipse(mouseX, mouseY, 60, 62);
 };
