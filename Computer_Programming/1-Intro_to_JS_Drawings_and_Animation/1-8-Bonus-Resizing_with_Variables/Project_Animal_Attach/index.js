@@ -2,16 +2,19 @@ var bodyX = 149;
 var bodyY = 199;
 var bodyW = 118;
 var bodyH = 104;
+
 var snoutW = bodyW*3/4;
 var snoutH = bodyH/3;
+
 var noseW = bodyW/4;
 var noseH = bodyH/7;
-var eyeW = bodyW*1/15;
+
+var eyeW = bodyW/15;
 var eyeH = bodyH/8;
 var earW = bodyW/3;
-var earH = bodyH/1;
+var earH = bodyH;
 
-noStroke();//to start
+noStroke();
 
 let draw = function() {
     //To have Snoopes Follow mouse
@@ -33,7 +36,7 @@ let draw = function() {
     noStroke();
     ellipse(bodyX+32, bodyY+8, snoutW, 75); 
     
-    // nose
+   // nose
     stroke(3, 0, 0);
     fill(13, 1, 1);
     ellipse(bodyX+70, bodyY+8, noseW, noseH); 
@@ -46,14 +49,15 @@ let draw = function() {
     
     //Eyes
     ellipse(bodyX+5, bodyY-7, eyeW, eyeH); // left eye
-    ellipse(bodyX+27, bodyY+-13, eyeW, eyeH); // right eye
+    ellipse(bodyX+27, bodyY-13, eyeW, eyeH); // right eye
     
-    // nose
+    // ear
     ellipse(bodyX-50, bodyY+37, earW, earH); 
-    strokeWeight(2);
-    fill(250, 247, 247);
+
     
     //Snoope's Smile
+    strokeWeight(2);
+    fill(250, 247, 247);
     arc(bodyX+42, bodyY+11, bodyW*0.8389, bodyH*0.57, 91, 126);
     
     //When not following mouse use this code to self animate. 
